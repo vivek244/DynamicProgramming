@@ -5,8 +5,9 @@ public class Premutation {
 		int l=2; int j=5;
 		int fact[] =new int [n+1];
 		fact[0]=1;
-		for(int i=1;i<n;i++) {
+		for(int i=1;i<=n;i++) {
 			fact[i]=i*fact[i-1];
+			System.out.println(i);
 		}
 		System.out.println(fact[5]);
 		System.out.println(fact[j-l]);
