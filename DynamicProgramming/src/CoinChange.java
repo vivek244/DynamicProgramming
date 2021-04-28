@@ -14,9 +14,9 @@ public class CoinChange {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int arr[]= {1,2,5};
+		int arr[]= {1,2};
 		int m=arr.length;
-		System.out.println(count(arr,m,10));
+		System.out.println(count(arr,m,4));
 		System.out.println(m);
 				
 		}
