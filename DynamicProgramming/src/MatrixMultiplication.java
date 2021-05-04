@@ -12,9 +12,9 @@ public class MatrixMultiplication {
          if (count < min)
              min = count;
          
-         System.out.println(chain(p, i, k));
+//         System.out.println(chain(p, i, k));
 //         System.out.println(chain(p, k + 1, j));
-//         System.out.println(p[i - 1] * p[k] * p[j]);
+         System.out.println(p[i - 1] * p[k] * p[j]);
          
 		}
 		return min;
