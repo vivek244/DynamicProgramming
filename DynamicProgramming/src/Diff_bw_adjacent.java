@@ -26,6 +26,9 @@ public class Diff_bw_adjacent {
 		int arr[]=new int[] {10,5,8,6,2,9,1,4,3};
 		int n=arr.length;
 		System.out.println(longest(arr,n));
+		for (int i=1;i<=n;i++) {
+			System.out.println(arr[i-1]);
+		}
 
 	}
 
