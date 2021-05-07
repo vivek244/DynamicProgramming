@@ -1,7 +1,8 @@
 
 public class MinJump {
 	
-	public static int jump(int arr[], int n) {
+	public static int jump(int arr[]) {
+		int n = arr.length;
 		int jump[] =new int[n];
 		int i,j;
 		if(n==0 || arr[0]==0 ) 
@@ -11,7 +12,10 @@ public class MinJump {
 		for (i=1;i<n;i++) {
 			jump[i]=Integer.MAX_VALUE;
 			for (j=0;j<i;j++) {
-				if(i<=j +arr[j] && jump[j] !=Integer.MAX_VALUE) {
+//				System.out.println(i);
+//				System.out.println(j);
+				if(i<=j +arr[j] )// && jump[j] !=Integer.MAX_VALUE)
+						{
 					jump[i] = Math.min(jump[i], jump[j] + 1);
                     break;
 				}
@@ -25,9 +29,10 @@ public class MinJump {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[] = { 1, 3, 6, 1, 0, 9 };
+//		int n=arr.length;
 		 
         System.out.println("Minimum number of jumps to reach end is : "
-                           + jump(arr, arr.length));
+                           + jump(arr));
 
 	}
 
