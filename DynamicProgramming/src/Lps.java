@@ -26,7 +26,7 @@ public class Lps {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 String seq = "MATRIXIRTPmMNS";
-	        int n = seq.length();
+//	        int n = seq.length();
 	        System.out.println("The length of the lps is "+ pali(seq));
 
 	}
